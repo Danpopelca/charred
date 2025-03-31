@@ -1,4 +1,0 @@
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/mychroni/public_html/charred.mychronisnow.com
-    - /bin/cp -R * $DEPLOYPATH
