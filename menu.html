@@ -11,7 +11,6 @@
     family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Exemplu cu Playfair Display și Cormorant Garamond -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap"
       rel="stylesheet"
@@ -49,18 +48,20 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#menu" aria-current="page" class="nav-link">Menu</a>
+              <a href="menu.html" aria-current="page" class="nav-link">Menu</a>
             </li>
             <li class="nav-item">
-              <a href="#about" aria-current="page" class="nav-link">About Us</a>
+              <a href="about.html" aria-current="page" class="nav-link"
+                >About Us</a
+              >
             </li>
             <li class="nav-item">
-              <a href="#careers" aria-current="page" class="nav-link"
+              <a href="careers.html" aria-current="page" class="nav-link"
                 >Careers</a
               >
             </li>
             <li class="nav-item">
-              <a href="#contact" aria-current="page" class="nav-link"
+              <a href="contact.html" aria-current="page" class="nav-link"
                 >Contact</a
               >
             </li>
@@ -90,10 +91,12 @@
     <div class="menu mt-7 mb-4">
       <div class="container menu-overlay rounded-4">
         <div class="d-flex justify-content-center">
-            <div class="fw-bold text-primary">
-                <h1 class="text-center menu-title">MENU</h1>
-                <p class="text-center small-text text-secondary">menu prices subject to changes</p>
-            </div>
+          <div class="fw-bold text-primary">
+            <h1 class="text-center menu-title">MENU</h1>
+            <p class="text-center small-text text-secondary">
+              menu prices subject to changes
+            </p>
+          </div>
         </div>
         <div class="row">
           <!-- Appetizers -->
@@ -630,21 +633,6 @@
       </div>
     </footer>
 
-    <script>
-      const modal = document.getElementById("menuImageModal");
-      const modalTitle = document.getElementById("modalDishTitle");
-      const modalImage = document.getElementById("modalDishImage");
-
-      modal.addEventListener("show.bs.modal", function (event) {
-        const trigger = event.relatedTarget;
-        const title = trigger.getAttribute("data-title");
-        const imgSrc = trigger.getAttribute("data-img");
-
-        modalTitle.textContent = title;
-        modalImage.src = imgSrc;
-        modalImage.alt = title;
-      });
-    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
