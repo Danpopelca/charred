@@ -33,7 +33,7 @@ body {
 }
 
 .item {
-  color: rgba(134, 32, 32, 0.9215686275);
+  color: #b47414;
   letter-spacing: 1px;
 }
 
@@ -51,17 +51,23 @@ body {
 .menu-page {
   background-image: url("/images/menu/charred-background.webp");
   background-size: cover;
-  background-position: center 68%;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 .about-page {
-  background-image: url("/images/about-background.webp");
+  background-image: linear-gradient(to bottom right, rgba(81, 81, 81, 0.9), rgba(0, 0, 0, 0.9)), url("/images/backgroundgrad.webp");
   background-size: cover;
-  background-position: center 10%;
-  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+}
+
+.content-wrapper {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 8px;
+  color: #fff;
 }
 
 .menu-item {
@@ -130,4 +136,10 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center 20%;
+}
+
+#contact-info {
+  font-family: "sans-serif", serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
 }

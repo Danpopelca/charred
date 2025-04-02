@@ -21,7 +21,7 @@
     <title>Charred 1967 - About Us</title>
   </head>
 
-  <body>
+  <body class="about-page">
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -97,18 +97,18 @@
           </div>
         </div>
         <div class="container">
-          <div class="row bg-primary mt-2 rounded-top-4 pt-4">
+          <div class="row mt-2 rounded-top-4 pt-4 content-wrapper">
             <div class="col-lg-6 ps-3">
               <h1 class="display-3 fw-bold mb-3">Contact Us</h1>
-              <p class="text-light lead fw-bold">
+              <p class="lead">
                 Feel free to use the form for reservation or use the email if
                 you have any questions or concerns. Old-fashioned phone calls
                 work too.
               </p>
-              <div class="d-flex flex-column justify-content-center">
+              <div class="d-flex flex-column justify-content-center" id="contact-info">
                 <a href="tel:1234567890" class="text-dark mb-3 ms-4">
-                  <i class="fa-solid fa-phone fa-lg" aria-hidden="true"> </i>
-                  <span class="text-secondary fs-4 fw-bold">
+                  <i class="fa-solid fa-phone fa-lg text-secondary" aria-hidden="true"> </i>
+                  <span class="text-primary fs-3">
                     123-456-7890
                   </span>
                 </a>
@@ -116,8 +116,8 @@
                   href="mailto:charred1976@email.com"
                   class="text-dark mb-3 ms-4"
                 >
-                  <i class="fa-solid fa-envelope fa-lg" aria-hidden="true"> </i>
-                  <span class="text-secondary fs-4 fw-bold">
+                  <i class="fa-solid fa-envelope fa-lg text-secondary" aria-hidden="true"> </i>
+                  <span class="text-primary fs-3">
                     charred1976@email.com
                   </span>
                 </a>
@@ -126,9 +126,9 @@
                   target="_blank"
                   class="text-dark mb-3 ms-4"
                 >
-                  <i class="fa-solid fa-location-dot fa-lg" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot fa-lg text-secondary" aria-hidden="true">
                   </i>
-                  <span class="text-secondary fs-4 fw-bold">
+                  <span class="text-primary fs-3">
                     1 West Grillhouse Ave,<br />
                     Cape May, NJ 08204
                   </span>
@@ -172,7 +172,7 @@
                   ></textarea>
                 </div>
                 <div class="d-grid">
-                  <button class="btn btn-secondary mb-4">Submit</button>
+                  <button class="btn btn-primary mb-4">Submit</button>
                 </div>
               </form>
             </div>
