@@ -55,15 +55,17 @@ body {
   background-position: center 68%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
 
+
+}
 .about-page {
   background-image: url('/images/about-background.webp');
   background-size: cover;
-  background-position: center;
+  background-position: center 10%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 
 .menu-item {
   cursor: pointer;
@@ -72,7 +74,7 @@ body {
   font-family: 'Playfair Display', serif;
 
   &:hover {
-    color: #d4af37; // aur la hover
+    color: #d4af37; 
     transform: scale(1.02);
   }
 
@@ -82,9 +84,18 @@ body {
   }
 }
 
-// Responsive – ascunde iconul pe ecrane mici
-@media (max-width: 576px) {
-  .menu-item::after {
-    display: none;
-  }
+.img-about {
+  height: 300px; // sau height: 300px;
+  overflow: hidden;
+}
+
+.img-about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grayscale {
+  filter: grayscale(100%);
 }
