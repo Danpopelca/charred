@@ -84,8 +84,13 @@ body {
   }
 }
 
-.img-about {
+.img-header {
   height: 300px; // sau height: 300px;
+  overflow: hidden;
+}
+
+.img-about {
+  height: 400px; // sau height: 300px;
   overflow: hidden;
 }
 
@@ -96,6 +101,39 @@ body {
   object-position: center;
 }
 
+#headerContact {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+#headerAbout {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#headerCareers {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
 .grayscale {
   filter: grayscale(100%);
+}
+
+#career {
+  height: 350px; // sau height: 300px;
+  overflow: hidden;
+}
+
+#career .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
 }

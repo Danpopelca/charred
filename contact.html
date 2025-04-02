@@ -7,8 +7,7 @@
     <link rel="preconnect" href="https://fonts-googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?
-    family=Montserrat:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -22,13 +21,13 @@
     <title>Charred 1967 - About Us</title>
   </head>
 
-  <body class="about-page">
+  <body>
     <!-- Navbar -->
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <div class="container">
         <a href="index.html" class="navbar-brand">
-          <img src="/images/logo.png" alt="logo" width="120px" />
+          <img src="/images/logo.png" alt="Charred 1967 Logo" width="120px" />
         </a>
         <button
           class="navbar-toggler"
@@ -43,15 +42,15 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a href="index.html" aria-current="page" class="nav-link"
-                >Home</a
-              >
+              <a href="index.html" aria-current="page" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="menu.html" aria-current="page" class="nav-link">Menu</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" aria-current="page" class="nav-link">About Us</a>
+              <a href="about.html" aria-current="page" class="nav-link"
+                >About Us</a
+              >
             </li>
             <li class="nav-item">
               <a href="careers.html" aria-current="page" class="nav-link"
@@ -74,7 +73,7 @@
           </span>
           <span class="nav-item">
             <span class="fa-stack">
-              <a href="#">
+              <a href="#icons">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fab fa-instagram fa-stack-1x text-secondary"></i>
               </a>
@@ -85,24 +84,129 @@
     </nav>
 
     <!-- Header -->
-    <div class="header vh-100">
-        <div class="container mt-8 pb-8 ">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-container">
-                <img src="/images/loading.gif" class="img-fluid rounded-circle" alt="loading" />
+    <div class="header mt-6">
+      <div class="container-fluid">
+        <div class="col-12">
+          <div class="img-header">
+            <img
+              src="/images/about-background.webp"
+              alt="contact-background"
+              id="headerContact"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="container">
+          <div class="row bg-primary mt-2 rounded-top-4 pt-4">
+            <div class="col-lg-6 ps-3">
+              <h1 class="display-3 fw-bold mb-3">Contact Us</h1>
+              <p class="text-light lead fw-bold">
+                Feel free to use the form for reservation or use the email if
+                you have any questions or concerns. Old-fashioned phone calls
+                work too.
+              </p>
+              <div class="d-flex flex-column justify-content-center">
+                <a href="tel:1234567890" class="text-dark mb-3 ms-4">
+                  <i class="fa-solid fa-phone fa-lg" aria-hidden="true"> </i>
+                  <span class="text-secondary fs-4 fw-bold">
+                    123-456-7890
+                  </span>
+                </a>
+                <a
+                  href="mailto:charred1976@email.com"
+                  class="text-dark mb-3 ms-4"
+                >
+                  <i class="fa-solid fa-envelope fa-lg" aria-hidden="true"> </i>
+                  <span class="text-secondary fs-4 fw-bold">
+                    charred1976@email.com
+                  </span>
+                </a>
+                <a
+                  href="https://www.google.com/maps?q=1+West+Grillhouse+Ave,+Cape+May,+NJ+08204"
+                  target="_blank"
+                  class="text-dark mb-3 ms-4"
+                >
+                  <i class="fa-solid fa-location-dot fa-lg" aria-hidden="true">
+                  </i>
+                  <span class="text-secondary fs-4 fw-bold">
+                    1 West Grillhouse Ave,<br />
+                    Cape May, NJ 08204
+                  </span>
+                </a>
               </div>
             </div>
-            <div
-              class="col-md-6 d-flex justify-content-center align-items-center"
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+              <form>
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    name="Name"
+                    placeholder="Name"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    name="Email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="date"
+                    class="form-control form-control-lg"
+                    id="date"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <textarea
+                    name="Message"
+                    class="form-control form-control-lg"
+                    placeholder="Message"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-secondary mb-4">Submit</button>
+                </div>
+              </form>
+            </div>
+            <!-- Map -->
+          </div>
+        </div>
+        <div class="map">
+          <div class="mx-4 my-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3067.123456789!2d-74.9234567!3d38.9356789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x000000000000000%3A0x000000000000000!2s1%20West%20Grillhouse%20Ave%2C%20Cape%20May%2C%20NJ%2008204!5e0!3m2!1sen!2sus!4v1712077777777"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             >
-              <div class="text-container">
-                <h1 class="display-2 text-bg-danger p-4 rounded-5">Website in progress..</h1>
-              </div>
+            </iframe>
+          </div>
+          <div class="button-location d-flex justify-content-center">
+            <div>
+              <a
+                href="https://www.google.com/maps?q=1+West+Grillhouse+Ave,+Cape+May,+NJ+08204"
+                target="_blank"
+                class="btn btn-secondary btn-lg mb-3"
+              >
+                <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>
+                Open in Google Maps
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <!-- Footer -->
 
