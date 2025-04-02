@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts-googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?
+    family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Exemplu cu Playfair Display și Cormorant Garamond -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cormorant+Garamond:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>Charred 1967 - Menu</title>
+  </head>
+
+  <body class="menu-page">
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="/images/logo.png" alt="logo" width="120px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="/index.html" aria-current="page" class="nav-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#menu" aria-current="page" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" aria-current="page" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#careers" aria-current="page" class="nav-link"
+                >Careers</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#contact" aria-current="page" class="nav-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-secondary"></i>
+              </a>
+            </span>
+          </span>
+          <span class="nav-item">
+            <span class="fa-stack">
+              <a href="#">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-instagram fa-stack-1x text-secondary"></i>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Menu -->
+
+    <div class="menu mt-7 mb-4">
+      <div class="container menu-overlay rounded-4">
+        <div class="d-flex justify-content-center">
+            <div class="fw-bold text-primary">
+                <h1 class="text-center menu-title">MENU</h1>
+                <p class="text-center small-text text-secondary">menu prices subject to changes</p>
+            </div>
+        </div>
+        <div class="row">
+          <!-- Appetizers -->
+          <div class="col-lg-6 ps-2 d-flex flex-column">
+            <h2 class="display-2 text-secondary text-center mb-4">
+              Appetizers
+            </h2>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charred Octopus"
+                  data-img="/images/menu/octopus.webp"
+                >
+                  Charred Octopus
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">24</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              grilled over natural charcoal, chickpea purée and lemon-infused
+              olive oil
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Lobster Arancini"
+                  data-img="images/menu/lobster.webp"
+                >
+                  Lobster Arancini
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">29</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              crispy risotto balls with lobster and mozzarella, saffron aioli
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Grilled Bone Marrow"
+                  data-img="images/menu/bone-marrow.webp"
+                >
+                  Grilled Bone Marrow
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">21</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              fire-grilled beef marrow bones, served with toasted rustic bread
+              and sea salt
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Wagyu Beef Carpaccio"
+                  data-img="images/menu/carpaccio.webp"
+                >
+                  Wagyu Beef Carpaccio
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">31</h3>
+              </div>
+            </div>
+            <p class="item">
+              thinly sliced wagyu, truffle oil, microgreens, shaved parmesan.
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charred Shrimp Cocktail"
+                  data-img="images/menu/shrimp.webp"
+                >
+                  Charred Shrimp Cocktail
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">19</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              jumbo shrimp lightly charred, spicy house-made cocktail sauce
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Crab & Corn Fritters"
+                  data-img="images/menu/crab-fritters.webp"
+                >
+                  Crab & Corn Fritters
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">17</h3>
+              </div>
+            </div>
+            <p class="item pe-7">lump crab, sweet corn, citrus remoulade</p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Stuffed Portobello"
+                  data-img="images/menu/portobello.webp"
+                >
+                  Stuffed Portobello
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">22</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              herbed goat cheese, sun-dried tomatoes, balsamic glaze drizzle
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charred Caesar"
+                  data-img="images/menu/caesar.webp"
+                >
+                  Charred Caesar
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">20</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              grilled romaine hearts, shaved Parmesan, house-made anchovy Caesar
+              dressing, sourdough croutons
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Beet & Burrata Salad"
+                  data-img="images/menu/burrata.webp"
+                >
+                  Beet & Burrata Salad
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">24</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              roasted red and golden beets, creamy burrata, arugula, pistachio
+              crumble, balsamic reduction.
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Steakhouse Wedge"
+                  data-img="images/menu/wedge.webp"
+                >
+                  Steakhouse Wedge
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">19</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              crisp iceberg lettuce, smoked bacon, cherry tomatoes, blue cheese
+              crumbles, buttermilk ranch
+            </p>
+          </div>
+
+          <!-- Entrees -->
+          <div class="col-lg-6 ps-2">
+            <h2 class="display-2 text-secondary text-center pe-5 mb-4">
+              Entrees
+            </h2>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="1967 Prime Ribeye (14 oz)"
+                  data-img="images/menu/ribeye.webp"
+                >
+                  1967 Prime Ribeye (14 oz)
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">64</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              aged 28 days, grilled over natural charcoal, finished with herb
+              butter
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charcoal-Seared Filet Mignon (8 oz)"
+                  data-img="images/menu/filet.webp"
+                >
+                  Charcoal-Seared Filet Mignon (8 oz)
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">68</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              center-cut tenderloin, flame-kissed for a smoky crust, truffle
+              mashed potatoes
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="New York Strip au Poivre (12 oz)"
+                  data-img="images/menu/newyork.webp"
+                >
+                  New York Strip au Poivre (12 oz)
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">58</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              cracked black pepper crust, cognac cream sauce and roasted garlic
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charred Lamb Chops"
+                  data-img="images/menu/lamb.webp"
+                >
+                  Charred Lamb Chops
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">56</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              rosemary-marinated australian lamb, with mint gremolata
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Bone-In Cowboy Ribeye (20 oz)"
+                  data-img="images/menu/cowboy.webp"
+                >
+                  Bone-In Cowboy Ribeye (20 oz)
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">72</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              hearty, black peppercorn crust, house steak sauce
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Sur y Mar"
+                  data-img="images/menu/surymar.webp"
+                >
+                  Sur y Mar
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">74</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              cold-water lobster tail, filet medallion, brushed with
+              garlic-lemon butter, wild rice.
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Tuna Steak au Charbon"
+                  data-img="images/menu/tuna.webp"
+                >
+                  Tuna Steak au Charbon
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">55</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              sushi-grade yellowfin, charred rare over open flame, soy-ginger
+              glaze
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Smoked Half Duck"
+                  data-img="images/menu/duck.webp"
+                >
+                  Smoked Half Duck
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">46</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              slow-roasted then fire-seared for crispy skin, cherry-balsamic
+              reduction
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Dry-Aged Pork Chop"
+                  data-img="images/menu/pork.webp"
+                >
+                  Dry-Aged Pork Chop
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">49</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              bone-in, brined and grilled, spiced apple compote
+            </p>
+            <div class="row">
+              <div class="col-10">
+                <h3
+                  class="menu-item"
+                  data-bs-toggle="modal"
+                  data-bs-target="#menuImageModal"
+                  data-title="Charred Cauliflower Steak"
+                  data-img="images/menu/cauliflower.webp"
+                >
+                  Charred Cauliflower Steak
+                </h3>
+              </div>
+              <div class="col-2">
+                <h3 class="text-primary">34</h3>
+              </div>
+            </div>
+            <p class="item pe-7">
+              char-grilled, chimichurri, roasted red pepper purée
+            </p>
+          </div>
+        </div>
+
+        <!-- Desserts -->
+
+        <div class="col-12 ps-2">
+          <h2 class="display-2 text-secondary text-center pe-5 mb-4">
+            Desserts
+          </h2>
+          <div class="row">
+            <div class="col-10">
+              <h3
+                class="menu-item"
+                data-bs-toggle="modal"
+                data-bs-target="#menuImageModal"
+                data-title="Molten Chocolate Lava Cake"
+                data-img="images/menu/lavacake.webp"
+              >
+                Molten Chocolate Lava Cake
+              </h3>
+            </div>
+            <div class="col-2">
+              <h3 class="text-primary">14</h3>
+            </div>
+          </div>
+          <p class="item pe-7">
+            Rich dark chocolate cake with a gooey center, served warm with
+            vanilla bean gelato and a raspberry coulis
+          </p>
+          <div class="row">
+            <div class="col-10">
+              <h3
+                class="menu-item"
+                data-bs-toggle="modal"
+                data-bs-target="#menuImageModal"
+                data-title="Grilled Peach Crème Brûlée"
+                data-img="images/menu/cremebrulee.webp"
+              >
+                Grilled Peach Crème Brûlée
+              </h3>
+            </div>
+            <div class="col-2">
+              <h3 class="text-primary">16</h3>
+            </div>
+          </div>
+          <p class="item pe-7">
+            classic vanilla custard infused with fire-grilled peach, finished
+            with a caramelized sugar crust.
+          </p>
+          <div class="row">
+            <div class="col-10">
+              <h3
+                class="menu-item"
+                data-bs-toggle="modal"
+                data-bs-target="#menuImageModal"
+                data-title="Bourbon Pecan Tart"
+                data-img="images/menu/pecantart.webp"
+              >
+                Bourbon Pecan Tart
+              </h3>
+            </div>
+            <div class="col-2">
+              <h3 class="text-primary">14</h3>
+            </div>
+          </div>
+          <p class="item pe-7">
+            Southern-style tart with toasted pecans and a splash of bourbon,
+            served with whipped crème fraîche
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal image-->
+    <div
+      class="modal fade"
+      id="menuImageModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="modalDishTitle"></h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              id="modalDishImage"
+              src=""
+              alt=""
+              class="img-fluid rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer border-top border-primary bg-dark text-white pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <ul class="nav justify-content-center fs-5">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="menu.html" class="nav-link">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="#careers" class="nav-link">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center text-secondary fs-8">
+          <p class="">&copy 2025 Charred 1967. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const modal = document.getElementById("menuImageModal");
+      const modalTitle = document.getElementById("modalDishTitle");
+      const modalImage = document.getElementById("modalDishImage");
+
+      modal.addEventListener("show.bs.modal", function (event) {
+        const trigger = event.relatedTarget;
+        const title = trigger.getAttribute("data-title");
+        const imgSrc = trigger.getAttribute("data-img");
+
+        modalTitle.textContent = title;
+        modalImage.src = imgSrc;
+        modalImage.alt = title;
+      });
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
